@@ -54,7 +54,7 @@ class _WeatherState extends State<Weather> {
       final httpUtil =
           HttpUtil(baseUrl: "https://api.openweathermap.org/data/2.5/");
       final response = await httpUtil.get(
-          "weather?lat=${position.latitude}&lon=${position.longitude}&appid=aa4c6915571bf2229f2afe8bebd29f0d");
+          "weather?lat=${position.latitude}&lon=${position.longitude}&appid=empty");
 
       setState(() {
         showTemp = true;
